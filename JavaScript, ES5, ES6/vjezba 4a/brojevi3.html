@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Brojevi</title>
+    <style>
+    .polje 
+    { 
+        background-color: white; 
+        border: none;
+    }    
+    </style>    
+    <script src="brojevi3.js" language="JavaScript"></script>
+</head>
+
+<body onload="init();">
+    <form action="">
+        Vaš pokušaj broj:
+        <input type="text" id="pokusaj" size="1" value="1" readonly="readonly" class="polje" />
+        <br>Vaši dosadašnji pokušaji:
+        <input type="text" id="pokusaji" size="1" value="" readonly="readonly" class="polje" />
+        <br />
+        <input type="text" id="broj" value="" size="3" maxlength="2" />
+        <br />
+        <input type="button" value="Pogodi" onclick="pogodi();" />
+        <input type="button" value="Na početak" onclick="init();" />
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vjezba 1a</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        function ispis(sPoruka) {
+            document.write(sPoruka, '<br />');
+        }
+
+        var iA = 10,
+            iB = 13,
+            sOperacija = '+',
+            iRazlika,
+            iBrojac,
+            jBrojac;
+
+        if (iA > iB) {
+            ispis("iA je veci");
+        } else {
+            ispis("iA je manji");
+        }
+
+
+        switch (sOperacija) {
+            case '+':
+                ispis('Zbrajanje');
+                break;
+            case '-':
+                ispis('Oduzimanje');
+                break;
+            case '*':
+                ispis('Množenje');
+                break;
+            case '/':
+                ispis('Dijeljenje');
+                break;
+            default:
+                ispis('Nepoznato');
+        }
+
+        iRazlika = iA > iB ? iA - iB : iB - iA;
+
+        ispis('Prava razlika: ' + iRazlika);
+
+        for (iBrojac = 1; iBrojac <= 10; iBrojac++) {
+            ispis('For: redak ' + iBrojac);
+        }
+
+        jBrojac = 1;
+        while (jBrojac <= 10) {
+            ispis('While: redak ' + jBrojac);
+            jBrojac++;
+        }
+
+    </script>
+</body>
+
+</html>

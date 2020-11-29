@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operatori</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var iA = 10,
+            iB = 3,
+            iSuma,
+            iRazlika,
+            iModulo,
+            bLogicka;
+
+        iSuma = iRazlika = iModulo = 0;
+
+        document.write('Početna vrijednost iA: ' + iA + '<br />');
+        document.write('Početna vrijednost iB: ' + iB + '<br />');
+
+        iSuma = iA + iB;
+        iRazlika = iA - iB;
+        iModulo = iA % iB;
+        document.write('Suma: ' + iSuma + '<br />');
+        document.write('Razlika: ' + iRazlika + '<br />');
+        document.write('Modulo: ' + iModulo + '<br />');
+
+        iA++;
+        iB--;
+        document.write('iA nakon ++: ' + iA + '<br />');
+        document.write('iB nakon --: ' + iB + '<br />');
+
+        iSuma += iA;
+        document.write('Sumi dodamo iA: ' + iSuma + '<br />');
+
+        bLogicka = iA > 5;
+        document.write('Je li iA > 5: ' + bLogicka + '<br />');
+
+        document.write('Paziti na konverzije iA + iB: ' + iA + iB + '<br />');
+        document.write('Paziti na konverzije (iA + iB): ' + (iA + iB) + '<br />');
+
+    </script>
+</body>
+
+</html>

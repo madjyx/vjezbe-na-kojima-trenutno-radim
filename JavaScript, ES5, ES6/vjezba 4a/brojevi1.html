@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Brojevi</title>    
+    <style>
+    .polje 
+    { 
+        background-color: white; 
+        border: none;
+    }    
+    </style>
+    <script src="brojevi1.js" language="JavaScript"></script>
+</head>
+
+<body onload="init();">
+    <form action="">
+        Slučajan broj:
+        <input 
+            type="text" 
+            id="slucajan" 
+            size="1" 
+            value="" 
+            readonly="readonly" 
+            class="polje" />
+        <br />
+        <input type="button" value="Generiraj" onclick="init();" />
+    </form>
+</body>
+
+</html>

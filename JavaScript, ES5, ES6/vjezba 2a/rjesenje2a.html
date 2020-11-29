@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Obrazac</title>
+    <script type="text/javascript" src="obrazac2a.js"></script>
+    <link rel="stylesheet" href="obrazac.css" />
+</head>
+
+<body onload="puniSelect(document.getElementById('predmeti'), asSP, document.getElementById('sk').selectedIndex);">
+    <form 
+       action="http://www.rebol.com/cgi-bin/test-cgi.cgi"         
+       method="GET">
+       <p>
+           <h3>Prijava ispita IPI akademija</h3>
+       </p>
+        <div>
+            <label for="ime">Unesite ime:</label>        
+            <input 
+                type="text" 
+                name="ime" 
+                id="ime" 
+                value="" />
+        </div>
+        <div>
+            <label for="prezime">Unesite prezime:</label>
+            <input 
+                type="text" 
+                name="prezime" 
+                id="prezime" 
+                value="" />
+        </div>
+        <div>
+            <label for="status">Status studenta:</label>        
+            <input 
+                type="radio" 
+                name="status" 
+                value="redovan" /> Redovan
+            <input 
+                type="radio" 
+                name="status" 
+                value="vanredan" /> Vanredan
+        </div>
+        <div>
+            <label>
+            <input 
+                type="checkbox" 
+                name="prijava" 
+                id="prijava" 
+                value="redovan">
+            Prijavan na redovni ispitni rok.</label>
+        </div>
+        <div>
+            <label for="sk">Školska godina:</label>
+            <select 
+               name="sk" 
+               id="sk" 
+               onchange="puniSelect(document.getElementById('predmeti'), asSP, this.selectedIndex);">
+                <option value="prva" selected="selected">Prva godina</option>
+                <option value="druga">Druga godina</option>
+                <option value="treca">Treća godina</option>            
+                <option value="cetvrta">Četvrta godina</option>            
+            </select>
+        </div>
+        <div>
+            <label for="predmeti">Odaberi predmet:</label>
+            <select 
+                name="predmeti" 
+                id="predmeti">
+            </select>
+        </div>
+        <input 
+            type="submit" 
+            value="Pošalji" 
+            onclick="return provjeri();" />
+    </form>
+</body>
+
+</html>
