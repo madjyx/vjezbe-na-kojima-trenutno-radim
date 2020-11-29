@@ -1,0 +1,76 @@
+body 
+{
+    font-family: Verdana, sans-serif;	
+    font-size: 14px;
+    color: navy;
+}
+
+input[type="text"], textarea, select, button
+{
+    /* postavljanje istih svojstava fonta na poljima*/
+    font-family: inherit;	
+    font-size: inherit;
+    color: inherit;
+    /* svaki element ce biti prikazan u novom redu */
+    display: block; 
+    margin: 10px 0px;
+    /* za izjednacavanje sirine svi polja koristi se border-box */
+    width: 200px;
+    box-sizing: border-box;
+    /* radi izjednacavanja boje ruba u svim preglednicima */ 
+    /* zaobljivanje ruba */ 
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px lightgray;
+
+}
+
+input[type="text"], select, button
+{
+    /* postavljanje zeljene visine i paddinga */
+    height: 30px;
+    padding: 3px 5px;
+} 
+
+/* osjencavanje elementa kada je u fokusu */ 
+input[type="text"]:focus, textarea:focus, select:focus
+{
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* da bi se maknuo obrub koji preglednik postavlja oko elementa postavi se svojstvo outline na none*/ 
+input[type="text"]:focus, textarea:focus, select:focus, button:focus
+{
+    outline: none;
+}
+
+textarea
+{
+    /* postavljanje zeljene visine i paddinga */
+    height: 60px;
+    padding: 3px 5px; 
+    /* sakrivanje strelica dok se ne popuni tekst */ 
+    overflow: auto; 
+}
+
+button
+{
+    /* zaobljivanje dugmeta i postavljanje gradijenta u pozadinu*/ 
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-image: linear-gradient  
+                (lightgray, darkgray, gray);
+    color: black;
+}
+
+button:active
+{
+    /* postavljanje druge boje na dugme nakon klika*/ 
+    background-image:linear-gradient  
+                (white, lightgray, darkgray);
+    color:gray;
+} 
+
+
+
+

@@ -1,0 +1,33 @@
+input
+{
+    display:block;
+    width:200px;
+    margin-bottom:10px;
+    border-radius:5px;
+    border:solid 1px #6d6c6c;
+    height:25px;
+    padding:3px;
+}
+
+label
+{
+    color:#6d6c6c;
+    font-weight:bold;
+}
+
+button
+{
+    background-image: linear-gradient(#f7dcdc, #c30f10);
+    color: white;
+    border: solid 1px #c30f10;
+    text-transform: uppercase;
+    height:35px;
+    width:120px;
+    margin-left:80px;
+    cursor:pointer;
+}
+
+button:active
+{
+    background-image: linear-gradient(#c30f10, #f7dcdc);
+}

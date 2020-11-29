@@ -1,0 +1,178 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    background-color: #c30f10;
+}
+
+body
+{
+    width:1000px;
+    margin: 0 auto;
+}
+
+p
+{
+    margin-bottom: 10px;
+}
+
+.zaglavlje, .glavno
+{
+    background-color: white;
+}
+
+.zaglavlje img
+{
+    margin: 20px 0px 10px 20px;
+}
+
+.zaglavlje p
+{
+    background-color: #e3e3e3;
+    height:30px;
+    margin-bottom:0px;
+    padding-left:40px;
+    padding-top:7px;
+    padding-top:7px;
+    border-top: solid 2px #ccc;
+    border-bottom: solid 2px #ccc;
+}
+
+.glavno
+{
+    padding-top:35px;
+    border-radius: 0 0 10px 10px;
+    padding-bottom:30px;
+    min-height:500px;
+}
+
+.navigacija a
+{
+    display:block;
+    padding:10px 35px 10px;
+    border-bottom: solid 1px #c30f10;
+    border-right: solid 1px #c30f10;
+    border-radius: 0 10px 10px 0;
+    width:90%;
+}
+
+.navigacija a:first-child
+{
+    border-top: solid 1px #c30f10;
+}
+
+.navigacija a.selected
+{
+    background-image: linear-gradient(#f7dcdc, #c30f10);
+    width:100%;
+}
+
+.clanak
+{
+    padding:15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.istaknuto
+{
+    background-color:#f7dcdc;
+}
+
+.kontakt
+{
+    background-color:#e8e8e8;
+    border: solid 1px #ccc;
+    margin-right:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+
+.kontakt h3
+{
+    color:#6d6c6c;
+    border-bottom: 1px solid #ccc;
+    margin: 5px 0; 
+    padding-left: 35px;
+    text-transform:uppercase;
+}
+
+.kontakt p
+{
+    margin:5px 15px;
+    padding-left: 20px;
+}
+
+
+
+.telefon
+{
+    background-image: url('../slike/telefon.png');
+    background-repeat: no-repeat;
+    
+}
+
+.email
+{
+    background-image: url('../slike/email.png');
+    background-repeat: no-repeat;
+}
+
+.radno-vrijeme
+{
+    background-image: url('../slike/radno-vrijeme.png');
+    background-repeat: no-repeat;
+}
+
+
+.rss
+{
+    font-size:13px;
+    background-image: url('../slike/rss.png');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    display:block;
+    margin-left:5px;
+}
+
+.podnozje a
+{
+    padding: 0px 10px;
+}
+
+.tecaj
+{
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+.tecaj h3
+{
+    margin: 10px 10px 5px 10px;
+}
+
+.tecaj em
+{
+    padding-left: 10px;
+}
+
+.tecaj p
+{
+    margin: 5px 10px 10px 10px;
+}
+
+.clanak img
+{
+    float:left;
+    margin-right:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    padding:3px;
+    box-shadow: 3px 3px 2px #ccc;
+}

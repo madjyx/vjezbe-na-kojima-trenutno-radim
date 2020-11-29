@@ -1,0 +1,36 @@
+.lijevi, .srednji, .desni 
+{
+    display:inline-block;
+    vertical-align: top;   
+}
+
+.lijevi
+{
+    width:20%;
+    padding-right: 20px;
+}
+
+.srednji
+{
+    width:55%;
+    padding-right: 20px;
+}
+
+.desni
+{
+    width:25%; 
+}
+
+.tecaj
+{
+    display:inline-block;
+    vertical-align: top;
+    width:250px;
+    min-height: 170px;
+    margin-bottom:20px;
+}
+
+.tecaj:nth-child(even)
+{
+    margin-right:20px;
+}

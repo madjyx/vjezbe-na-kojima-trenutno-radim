@@ -1,0 +1,184 @@
+html
+{
+    
+    background: #7b7775;
+}
+
+body
+{
+    font-size:12px;
+    font-family: Verdana, Arial, sans-serif;
+    color:#484645;
+    margin:0;
+    line-height:1.6;
+}
+
+header img
+{
+    margin: 10px 0 10px 30px;
+}
+
+header, article
+{
+    width:80%;
+    margin: 0px auto;
+    background-color: white;
+}
+
+nav
+{
+    background-color: #c30f10;
+    padding:
+   
+}
+
+nav a, nav a:hover, nav a:visited, nav a:active
+
+{
+    color:white;
+    padding:10px 20px;
+    display:inline-block;
+    text-transform:uppercase;
+}
+
+nav a
+{
+    
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    
+    text-decoration: underline;
+}
+
+nav ul
+{
+    list-style: none;
+    margin:0;
+}
+
+nav ul li
+{
+    
+    display:inline-block;
+}
+
+a, a:hover, a:visited, a:active
+{
+    color: #c30f10;
+    font-weight:bold;
+}
+
+h2, h3
+{
+    color: #c30f10;
+}
+
+article
+{
+    padding :20px 40px;
+    box-sizing: border-box;
+    
+    border-bottom: 2px solid #c00000;
+    min-height:600px;
+}
+
+article img
+{
+    float:right;
+    margin-right:15px;
+    margin-bottom:15px;
+}
+
+footer
+{
+    padding-top: 15px;
+    min-height: 30px;
+    background: #7b7775;
+    color:white;
+    text-align:center;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+td, th
+{
+    font-size:12px;
+    border: solid 1px #6d6c6c;
+    padding:5px 3px;
+}
+
+th
+{
+    color:#6d6c6c;
+    background-color: #f7dcdc;
+    height:30px;
+}
+
+td:nth-child(4)
+{
+    text-align: right;
+    padding-right: 5px;
+}
+
+tr:nth-child(odd)
+{
+    background-color: #e8e8e8;
+}
+
+iframe
+{
+    margin-top:20px;
+}
+
+fieldset
+{
+    width:50%;
+    margin-bottom:15px;
+    background-color:#f0f0f0;
+}
+
+fieldset legend
+{
+    color: #c30f10;
+    font-weight:bold;
+}
+
+label
+{
+    display:inline-block;
+    width:30%;
+}
+
+input[type=radio] + label, input[type=checkbox] + label
+{
+    width:auto;
+}
+
+select, input[type=text], input[type=email], textarea
+{
+    box-sizing: border-box;
+    width:60%;
+    margin-bottom: 5px;
+}
+
+input[type=checkbox]
+{
+    margin-left:30%;
+}
+
+button
+{
+    background-color: #c30f10;
+    color:white;
+    font-weight:bold;
+    border:none;
+    padding:10px 30px;
+    border-radius:5px;
+    
+}

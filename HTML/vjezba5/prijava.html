@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kursevi IPI</title>
+        <link rel="stylesheet" href="css/izgled.css" type="text/css" />
+        <link rel="icon" href="favicon.ico" />
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="slike/logo-ipi.png" alt="Kursevi IPI">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">O kursevima</a></li>
+                    <li><a href="popis.html">Popis kurseva</a></li>
+                    <li><a href="raspored.html">Raspored kurseva</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="prijava.html">Prijava na kurs</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h2>Prijava na kurs</h2>
+
+            <p>Na osnovne IPI kurseve (u učionici i online) mogu se prijaviti svi zainteresovani polaznici.</p>
+            <p>Pohađanje kurseva prijavljuje se putem sljedećeg obrasca:</p>
+			
+			<form action="http://httpbin.org/post " method="post">
+                <fieldset>
+                    <legend>Lični podaci</legend>
+
+                    <label for="ime">Ime:</label>
+                    <input id="ime" type="text" name="ime" required maxlength="50" autofocus>
+
+                    <label for="prezime">Prezime:</label>
+                    <input id="prezime" type="text" name="prezime" required maxlength="50">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required maxlength="50">
+
+                    <label>Status polaznika:</label>
+                    <input type="radio" id="student" name="status" value="1" checked><label for="student">student</label> 
+                    <input type="radio" id="akademska" name="status" value="2"><label for="akademska">član ak. zajednice</label> 
+                    <input type="radio" id="ostali" name="status" value="3"><label for="ostali">ostali</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Odabir kurseva i ostalo</legend>
+    
+                    <label for="tecaj">Kurs:</label>
+                    <select name="tecaj" required >
+                        <option></option>
+                        <option value="1">Osnove računara (Windows)</option>
+                        <option value="2">Osnove komunikacija (Internet Explorer, Microsoft Outlook)</option>
+                        <option value="3">Obrada teksta (Word)</option>
+                        <option value="4">Proračunske tablice (Excel)</option>
+                        <option value="5">Upotreba baza podataka (Access)</option>
+                        <option value="6">Prezentacije (PowerPoint)</option>
+                        <option value="7">IT sigurnost</option>
+                        <option value="8">Online saradnja</option>
+                    </select>
+
+                    <label for="komentar">Vaši prijedlozi i komentari:</label>
+                    <textarea name="komentar" maxlength="500"></textarea>
+                    
+                    <input type="checkbox" id="obavijesti" name="obavijesti" value="da"> <label for="obavijesti">Da, želim primati obavijesti o rasporedu kurseva.</label>
+                    
+                </fieldset>
+                
+                <button>Prijavite se</button>
+
+            </form>
+            
+        </article>
+        <footer>&copy; Internacionalna poslovno-informaciona akademija Tuzla/footer>
+    </body>
+</html>
